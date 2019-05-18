@@ -17,6 +17,9 @@
 # Inherit from rosy device
 $(call inherit-product, device/xiaomi/rosy/full_rosy.mk)
 
+## Enable updating of APEXes
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
 # Inherit some common LineageOS stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
