@@ -194,6 +194,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 ro.config.low_ram=false \
 ro.lmk.critical_upgrade=true \
 ro.lmk.downgrade_pressure=50 \
+ro.lmk.filecache_min_kb=153600 \
 ro.lmk.kill_timeout_ms=50 \
 ro.lmk.log_stats=true \
 ro.lmk.stall_limit_critical=40 \
