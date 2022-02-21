@@ -195,6 +195,7 @@ ro.config.low_ram=false \
 ro.lmk.critical_upgrade=true \
 ro.lmk.downgrade_pressure=50 \
 ro.lmk.log_stats=true \
+ro.lmk.stall_limit_critical=40 \
 ro.lmk.upgrade_pressure=50 \
 ro.lmk.use_minfree_levels=true \
 ro.lmk.use_psi=false
