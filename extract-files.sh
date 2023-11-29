@@ -64,4 +64,9 @@ extract "$MY_DIR"/proprietary-files-qc.txt "$SRC" "$SECTION"
 
 DEVICE_BLOB_ROOT="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
 
+# Dolby
+"${PATCHELF} --replace-needed "libstagefright_foundation.so" "libstagefright_foundation-v33.so" "${DEVICE_BLOB_ROOT}"/vendor/lib/libstagefright_soft_ddpdec.so"
+"${PATCHELF} --replace-needed "libstagefright_foundation.so" "libstagefright_foundation-v33.so" "${DEVICE_BLOB_ROOT}"/vendor/lib/libstagefright_soft_ac4dec.so"
+"${PATCHELF} --replace-needed "libstagefright_foundation.so" "libstagefright_foundation-v33.so" "${DEVICE_BLOB_ROOT}"/vendor/lib64/libdlbdsservice.so"
+
 "$MY_DIR"/setup-makefiles.sh

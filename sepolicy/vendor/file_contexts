@@ -2,6 +2,10 @@
 # Camera
 /data/vendor/qcam(/.*)?                         					u:object_r:vendor_camera_data_file:s0
 
+# Data files
+/data/vendor/dolby(/.*)?                                  u:object_r:vendor_data_file:s0
+/vendor/bin/hw/vendor\.dolby\.hardware\.dms@2\.0-service  u:object_r:hal_dms_default_exec:s0
+
 # Fingerprint HIDL
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.xiaomi_rosy u:object_r:hal_fingerprint_default_exec:s0
 

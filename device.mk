@@ -122,6 +122,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
     $(LOCAL_PATH)/audio/mixer_paths_mtp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_mtp.xml
 
+PRODUCT_COPY_FILES += \
+		$(LOCAL_PATH)/configs/audio/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml
+
 # XML Audio configuration files
 PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/a2dp_in_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_in_audio_policy_configuration_7_0.xml \
@@ -296,7 +299,11 @@ PRODUCT_COPY_FILES += \
 
 # Minijail
 PRODUCT_PACKAGES += \
-    libavservices_minijail.vendor
+    libavservices_minijail.vendor \
+    libcodec2_soft_common.vendor \
+    libcodec2_vndk.vendor \
+    libsfplugin_ccodec_utils.vendor \
+    libstagefright_foundation-v33
 
 # Net
 PRODUCT_PACKAGES += \
