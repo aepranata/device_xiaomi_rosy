@@ -215,13 +215,25 @@ PRODUCT_PACKAGES += \
 
 # GPS
 PRODUCT_PACKAGES += \
-    libcurl
-
-PRODUCT_PACKAGES += \
-    android.hardware.gnss@2.1.vendor
-
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/gps/,$(TARGET_COPY_OUT_VENDOR)/etc)
+    android.hardware.gnss@2.1-impl-qti \
+    android.hardware.gnss@2.1-service-qti \
+    gps.conf \
+    flp.conf \
+    gnss_antenna_info.conf \
+    gnss@2.0-base.policy \
+    gnss@2.0-xtra-daemon.policy \
+    gnss@2.0-xtwifi-client.policy \
+    gnss@2.0-xtwifi-inet-agent.policy \
+    libcurl \
+    libloc_pla_headers \
+    liblocation_api_headers \
+    libgps.utils_headers \
+    liblocation_api \
+    libgps.utils \
+    libbatching \
+    libgeofencing \
+    libloc_core \
+    libgnss
 
 # Health HAL
 PRODUCT_PACKAGES += \
