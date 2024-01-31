@@ -195,6 +195,10 @@ ro.config.low_ram=false \
 ro.lmk.log_stats=true \
 ro.lmk.use_minfree_levels=true
 
+# Log
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+persist.log.tag.OpenGLRenderer=S
+
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
 av.debug.disable.pers.cache=1 \
