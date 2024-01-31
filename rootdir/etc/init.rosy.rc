@@ -55,7 +55,8 @@ on property:sys.fp.vendor=goodix
    setprop persist.sys.fp.vendor goodix
 
 on post-fs-data
-
+    # Goodix
+    mkdir /data/gf_data 0700 system system
     # IR nodes
     chown system system /dev/spidev7.1
     chown system system /dev/spidev6.1
