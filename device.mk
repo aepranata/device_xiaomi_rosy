@@ -27,7 +27,7 @@ PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := frameworks/base/config/boot-im
 
 # Speed profile services and wifi-service to reduce RAM and storage
 PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
- 
+
 # APEX
 PRODUCT_COMPRESSED_APEX := false
 
@@ -195,7 +195,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     gdxbacktrace \
     gdxunwind \
-    libshims_goodix \
+    libshimfp \
     libstdc++.vendor
 
 # FM
@@ -354,8 +354,6 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     init.qcom.rc \
     init.qcom.usb.rc \
-    init.recovery.qcom.rc \
-    init.recovery.qcom.usb.rc \
     init.rosy.rc \
     init.target.rc \
     ueventd.qcom.rc
