@@ -392,7 +392,8 @@ PRODUCT_COPY_FILES += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    $(LOCAL_PATH) \
+    bootable/deprecated-ota
 
 QCOM_SOONG_NAMESPACE := \
     $(LOCAL_PATH)/qcom-caf
