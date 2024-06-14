@@ -390,6 +390,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+QCOM_SOONG_NAMESPACE := \
+    $(LOCAL_PATH)/qcom-caf
+
 # Telephony
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.5.vendor \
