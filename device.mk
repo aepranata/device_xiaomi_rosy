@@ -338,7 +338,7 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-lite-vendorcompat:64 \
     libprotobuf-cpp-full-3.9.1-vendorcompat \
     libprotobuf-cpp-lite-3.9.1-vendorcompat
-    
+
 # Public Libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
@@ -424,6 +424,9 @@ PRODUCT_COPY_FILES += \
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0-service.rosy
+
+# Update
+AB_OTA_UPDATER := false
 
 # USB HAL
 PRODUCT_PACKAGES += \
