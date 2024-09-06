@@ -56,6 +56,14 @@ if [ -z "$SRC" ]; then
     SRC=adb
 fi
 
+function blob_fixup() {
+    case "${1}" in
+        vendor/lib64/libwvhidl.so)
+            "${PATCHELF}" --replace-needed "libcrypto.so" "libcrypto-v34.so" "${2}"
+        ;;
+    esac
+}
+
 # Initialize the helper
 setup_vendor "$DEVICE" "$VENDOR" "$LINEAGE_ROOT" true "$CLEAN_VENDOR"
 
