@@ -188,6 +188,10 @@ PRODUCT_PACKAGES += \
     vendor.display.config@1.0.vendor \
     vendor.display.config@2.0.vendor
 
+# Dolby
+PRODUCT_PACKAGES += \
+    AfterEcho
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey \
