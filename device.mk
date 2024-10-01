@@ -123,7 +123,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/mixer_paths_mtp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_mtp.xml
 
 PRODUCT_COPY_FILES += \
-		$(LOCAL_PATH)/configs/audio/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml
+    $(LOCAL_PATH)/configs/audio/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml
 
 # XML Audio configuration files
 PRODUCT_COPY_FILES += \
@@ -194,7 +194,7 @@ PRODUCT_PACKAGES += \
     android.hardware.drm-V1-ndk.vendor
 
 PRODUCT_COPY_FILES += \
-        $(LOCAL_PATH)/configs/gpfspath_oem_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gpfspath_oem_config.xml
+    $(LOCAL_PATH)/configs/gpfspath_oem_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gpfspath_oem_config.xml
 
 # Fingerprint
 PRODUCT_PACKAGES += \
@@ -345,7 +345,7 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-lite-vendorcompat:64 \
     libprotobuf-cpp-full-3.9.1-vendorcompat \
     libprotobuf-cpp-lite-3.9.1-vendorcompat
-    
+
 # Public Libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
