@@ -22,6 +22,10 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 # Inherit from rosy device
 $(call inherit-product, device/xiaomi/rosy/full_rosy.mk)
 
+# Inherit from AfterEcho
+$(call inherit-product-if-exists, vendor/dolby/afterlife/afterlife.mk)
+
+
 # Device identifier. This must come after all inclusions
 PRODUCT_NAME := afterlife_rosy
 
