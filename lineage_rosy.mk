@@ -16,6 +16,7 @@
 
 # Inherit some common LineageOS stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+LINEAGE_MAINTAINER := aepranata
 
 # Inherit from rosy device
 $(call inherit-product, device/xiaomi/rosy/full_rosy.mk)
