@@ -19,6 +19,7 @@ $(call inherit-product, vendor/afterlife/config/common_full_phone.mk)
 AFTERLIFE_MAINTAINER := aepranata
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_USE_ECHO := true
+TARGET_USE_FX := true
 
 # Inherit from rosy device
 $(call inherit-product, device/xiaomi/rosy/full_rosy.mk)
