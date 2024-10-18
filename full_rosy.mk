@@ -25,6 +25,10 @@ $(call inherit-product, device/xiaomi/rosy/device.mk)
 # Include our private certificate
 -include vendor/atiga-priv/keys/keys.mk
 
+# Inherit from AtigaFx
+$(call inherit-product-if-exists, vendor/atiga/fx/fx.mk)
+TARGET_USE_FX := true
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := rosy
 PRODUCT_BRAND := Xiaomi
