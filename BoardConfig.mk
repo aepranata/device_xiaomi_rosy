@@ -64,6 +64,10 @@ TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CLANG_VERSION := atiga
 
+# Kernel Clang Flags
+KERNEL_CC := CC=clang
+override KERNEL_TOOLCHAIN_PREFIX_arm := arm-linux-android-
+
 # ANT
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 
