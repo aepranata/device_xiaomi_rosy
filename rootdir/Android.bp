@@ -10,6 +10,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "fstab.qcom_ramdisk",
+    src: "etc/fstab.qcom",
+    installable: true,
+    ramdisk: true,
+}
+
+prebuilt_etc {
     name: "init.qcom.rc",
     src: "etc/init.qcom.rc",
     sub_dir: "init/hw",
