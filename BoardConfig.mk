@@ -163,8 +163,8 @@ DEVICE_SPECIFIC_MEDIA_PATH := $(DEVICE_PATH)/qcom-caf/media
 TARGET_USES_MEDIA_EXTENSIONS := true
 
 # Partitions
-SSI_PARTITIONS := system
-TREBLE_PARTITIONS := vendor
+SSI_PARTITIONS := product system system_ext
+TREBLE_PARTITIONS := odm vendor
 ALL_PARTITIONS := $(SSI_PARTITIONS) $(TREBLE_PARTITIONS)
 
 $(foreach p, $(call to-upper, $(ALL_PARTITIONS)), \
